@@ -1,0 +1,45 @@
+﻿<Window x:Class="Mantecado.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mantecado"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="RegistrationWindow" Height="450" Width="800">
+    <Grid Height="440" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="89*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="Logo" HorizontalAlignment="Left" Text="Mantencado Registration Form" TextWrapping="Wrap" VerticalAlignment="Center" Width="172" Height="38" TextAlignment="Center" FontSize="14" Background="{x:Null}" BorderBrush="{x:Null}" Grid.ColumnSpan="2" Margin="314,0,0,0"/>
+        <TextBlock x:Name="name" HorizontalAlignment="Left" Margin="183,0,0,0" Grid.Row="1" Text="Name:" TextWrapping="Wrap" VerticalAlignment="Center" Height="39" Width="217"/>
+        <TextBox x:Name="name_box" Grid.Column="1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="42" BorderBrush="#FF000002" Margin="0,39,0,0" Grid.RowSpan="3"/>
+        <TextBlock x:Name="age" HorizontalAlignment="Left" Grid.Row="2" Text="Age:" TextWrapping="Wrap" VerticalAlignment="Center" Margin="183,0,0,0" Height="36" Width="217"/>
+        <TextBlock x:Name="id_num" HorizontalAlignment="Left" Grid.Row="2" Text="ID Number:" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="218" Grid.ColumnSpan="2" Margin="183,36,0,0" Grid.RowSpan="2"/>
+        <TextBlock x:Name="pay" HorizontalAlignment="Left" Grid.Row="3" Text="Pay:" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" Margin="183,37,0,0" Height="33" Grid.RowSpan="2"/>
+        <TextBlock x:Name="sex" HorizontalAlignment="Left" Margin="183,0,0,0" Grid.Row="5" Text="Gender:" TextWrapping="Wrap" VerticalAlignment="Center" Height="37" Width="217"/>
+        <TextBlock x:Name="birthday" HorizontalAlignment="Left" Margin="183,0,0,0" Grid.Row="6" Text="Birthday: (dd/mm/yyyy)" TextWrapping="Wrap" VerticalAlignment="Center" Height="37" Width="218" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="age_box" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2"  TextWrapping="Wrap" VerticalAlignment="Center" Width="242" Height="37" BorderBrush="Black"/>
+        <TextBox x:Name="id_box" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="3"  TextWrapping="Wrap" VerticalAlignment="Center" Width="242" Height="37" BorderBrush="Black"/>
+        <TextBox x:Name="pay_box" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="4"  TextWrapping="Wrap" VerticalAlignment="Center" Width="242" Height="39" BorderBrush="#FF00020A"/>
+        <Button x:Name="Submit" Content="Submit" HorizontalAlignment="Left" Margin="347,56,0,0" Grid.Row="7" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="32" Width="106" Click="Submit_Click_1"/>
+        <TextBox x:Name="birthday_box" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="6"  TextWrapping="Wrap" VerticalAlignment="Center" Width="242" Height="38" BorderBrush="Black"/>
+        <TextBox x:Name="gender_box" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="5"  TextWrapping="Wrap" VerticalAlignment="Center" Width="242" Height="36"/>
+
+
+
+
+    </Grid>
+</Window>
